@@ -30,8 +30,7 @@ def run_game():
     bullets = Group()
     aliens = Group()
 
-    # Make an alien.
-    #alien = Alien(ai_settings, screen)
+   
 
     # Create the fleet of aliens.
     gf.create_fleet(ai_settings, screen, ship, aliens)
@@ -51,29 +50,9 @@ def run_game():
 run_game()
 
 
-#         bullets.update()
-
-#  # Get rid of bullets that have disappeared.
-#         for bullet in bullets.copy():
-#             if bullet.rect.bottom <= 0:
-#                 bullets.remove(bullet)
-#         #print(len(bullets))   commented out as game will slow down to print each time in terminal
-
-        #gf.update_screen(ai_settings, screen, ship, bullets)
-
 
        
    
-#  # Watch for keyboard and mouse events.
-#         for event in pygame.event.get():
-#             if event.type == pygame.QUIT:
-#                 sys.exit()
-    
-#  # Redraw the screen during each pass through the loop.
-#         screen.fill(ai_settings.bg_color)
-#         ship.blitme()
-#  # Make the most recently drawn screen visible.
-#         pygame.display.flip()
 
 
 
